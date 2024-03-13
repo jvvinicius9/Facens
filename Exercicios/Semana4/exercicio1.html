@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        select {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="radio"] + label {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #dc3545;
+        }
+
+        button[type="submit"]:hover,
+        button[type="reset"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://65f0dc11da8c6584131c87ed.mockapi.io/dadosAluno" method="post">    
+        <fieldset>
+            <legend>Cadastro do Cliente</legend>
+            <p>
+                <label for="nome">Nome do aluno</label>
+                <input type="text" name="nomeAluno" id="nomeAluno" required>
+            </p>
+            <p>
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade">
+                <label for="numero">Numero</label>
+                <input type="text" name="numero" id="numero">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep">
+                <label for="estado">Estado</label>
+                <select name="estado" id="">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="DF">Distrito Federal</option>
+                </select>
+            </p>
+            <p>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone">
+                <label for="celular">Celular</label>
+                <input type="tel" name="celular" id="celular" required>
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label>Cor</label>
+                <input type="radio" name="cor" value="branca" id="corBranca"><label for="corBranca">Branca</label>
+                <input type="radio" name="cor" value="preta" id="corPreta"><label for="corPreta">Preta</label>
+                <input type="radio" name="cor" value="parda" id="corParda"><label for="corParda">Parda</label>
+                <input type="radio" name="cor" value="amarela" id="corAmarela"><label for="corAmarela">Amarela</label>
+                <input type="radio" name="cor" value="indigena" id="corIndigena"><label for="corIndigena">Indígena</label>
+            </p>
+            <hr>
+            <legend>Dados do Pai</legend>
+            <p>
+                <label for="nomePai">Nome do Pai</label>
+                <input type="text" name="nomePai" id="nomePai" required>
+            </p>
+            <p>
+                <label for="dataPai">Data de Nascimento</label>
+                <input type="date" name="dataPai" id="dataPai">
+            </p>
+            <p>
+                <label for="naturalidadePai">Naturalidade</label>
+                <input type="text" name="naturalidadePai" id="naturalidadePai">
+            </p>
+            <p>
+                <label for="instrucaoPai">Instrução</label>
+                <input type="text" name="instrucaoPai" id="instrucaoPai">
+            </p>
+            <p>
+                <label for="profissaoPai">Profissão</label>
+                <input type="text" name="profissaoPai" id="profissaoPai">
+            </p>
+            <p>
+                <label for="celularPai">Celular</label>
+                <input type="tel" name="celularPai" id="celularPai" required>
+            </p>
+            <p>
+                <label for="emailPai">E-mail</label>
+                <input type="email" name="emailPai" id="emailPai" required>
+            </p>
+            <p>
+                <label for="cpfPai">CPF</label>
+                <input type="text" name="cpfPai" id="cpfPai" required>
+            </p>
+            <p>
+                <label for="responsavelPai">É o Responsável Financeiro?</label>
+                <input type="radio" name="responsavelPai" id="true"><label for="">Sim</label>
+                <input type="radio" name="responsavelPai" id="false"><label for="">Não</label>
+            </p>
+            <hr>
+            <legend>Dados da Mãe</legend>
+            <p>
+                <label for="nomeMae">Nome da Mãe</label>
+                <input type="text" name="nomeMae" id="nomeMae" required>
+            </p>
+            <p>
+                <label for="dataMae">Data de Nascimento</label>
+                <input type="date" name="dataMae" id="dataMae">
+            </p>
+            <p>
+                <label for="naturalidadeMae">Naturalidade</label>
+                <input type="text" name="naturalidadeMae" id="naturalidadeMae">
+            </p>
+            <p>
+                <label for="instrucaoMae">Instrução</label>
+                <input type="text" name="instrucaoMae" id="instrucaoMae">
+            </p>
+            <p>
+                <label for="profissaoMae">Profissão</label>
+                <input type="text" name="profissaoMae" id="profissaoMae">
+            </p>
+            <p>
+                <label for="celularMae">Celular</label>
+                <input type="tel" name="celularMae" id="celularMae" required>
+            </p>
+            <p>
+                <label for="emailMae">E-mail</label>
+                <input type="email" name="emailMae" id="emailMae" required>
+            </p>
+            <p>
+                <label for="cpfMae">CPF</label>
+                <input type="text" name="cpfMae" id="cpfMae" required>
+            </p>
+            <p>
+                <label for="responsavelMae">É o Responsável Financeiro?</label>
+                <input type="radio" name="responsavelMae" id="true"><label for="">Sim</label>
+                <input type="radio" name="responsavelMae" id="false"><label for="">Não</label>
+            </p>
+            <hr>
+            <legend>Dados do curso</legend>
+            <p>
+                <label for="curso">Nome do Curso</label>
+                    <select for="curso" id="" required>
+                        <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                        <option value="engenharia">Engenharia Elétrica</option>
+                        <option value="medicina">Medicina</option>
+                </select>
+            </p>
+            <p>
+                <label for="dataIngresso">Data de Ingresso</label>
+                <input type="date" name="dataIngresso" id="dataIngresso" required>
+            </p>
+            <p>
+                <label for="valor">Valor</label>
+                <input type="number" name="valor" id="valor" required>
+            </p>
+            <p>
+                <label for="parcelas">Quantidade de parcelas</label>
+                <input type="number" name="parcelas" id="parcelas" required min="1" max="12" >
+            </p>
+            <button type="submit">Salvar</button>
+            <button type="reset">Resetar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
