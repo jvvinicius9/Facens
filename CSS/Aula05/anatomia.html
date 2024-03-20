@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia do CSS</title>
+    <style>
+        /* Anatomia do CSS */
+        .seletor {
+            /* tipos de propriedade*/
+            color: #d67b1a;
+            /* por código*/
+            font-size: 40px
+                /*unidade de medida*/
+            ;
+            background-color: greenyellow;
+            /* por nome */
+            /* multiplas unidades */
+            border: solid 2px #18122c;
+            /*por funçao */
+            width: calc(100% - 120px);
+            /* por pseudo-classes */
+        }
+
+        .seletor:hover {
+            background-color: rgb(1, 200, 30);
+        }
+
+        /*por pseudo-elemento */
+        .seletor::first-letter {
+            font-size: 100px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="seletor">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, vero.</div>
+</body>
+
+</html>
