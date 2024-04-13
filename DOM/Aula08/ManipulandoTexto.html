@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipulando texto</title>
+</head>
+<body>
+    <h1>DOM - Manipulando texto</h1>
+    <p class="um">1° Parágrafo</p>
+    <p id="dois">2° Parágrafo</p>
+    <p>
+        <input type="text" name="ex" id="ex">
+    </p>
+    <p>
+        <ul>
+            <li>Professor</li>
+            <li>Alunos</li>
+        </ul>
+    </p>
+    <script>
+        let titulo = document.querySelector('h1')
+        titulo.textContent = "Titulo novo"
+        let par1 = document.querySelector('.um')
+        par1.textContent = "novo primeiro paragrafo"
+        let par2 = document.getElementById("dois")
+        par2.innerText = "novo segundo paragrafo"
+
+        document.querySelector("#ex").value = "joao"
+
+        let lista = document.querySelectorAll("li")
+        lista[0].textContent = 'Professor esdon'
+    </script>
+</body>
+</html>

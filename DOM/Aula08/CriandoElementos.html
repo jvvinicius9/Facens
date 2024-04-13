@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Criando Elementos</title>
+</head>
+<body>
+   <h1>DOM - Criando Elementos</h1>
+   <h2>Lista de atividades</h2>
+   <p>
+    <label for="ativ">Digite sua atividade</label>
+    <input type="text" name="ativ" id="ativ">
+    <button onclick="inserir(event)">Inserir atividade</button>
+
+    <p>
+        <ul>
+
+        </ul>
+    </p>
+   </p> 
+</body>
+<script>
+    function inserir(event) {
+        // debugger
+        event.preventDefault()
+        let texto = document.querySelector('#ativ').value
+        let item = document.createElement('li')
+        item.textContent = texto
+        let lista = document.querySelector('ul')
+        lista.appendChild(item)
+        document.querySelector('#ativ').value = ''
+    }
+</script>
+</html>

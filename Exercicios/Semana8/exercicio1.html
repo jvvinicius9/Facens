@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+    <style>
+        #bloco {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            background-color: #ccc;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        #btn {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Mudar Cor</button>
+    <div id="bloco"></div>
+
+    <script>
+        const cores = ['red', 'blue', 'grey', 'yellow', 'orange'];
+        const bloco = document.getElementById('bloco');
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', () => {
+            const indiceAleatorio = Math.floor(Math.random() * cores.length);
+            bloco.style.backgroundColor = cores[indiceAleatorio];
+        });
+    </script>
+</body>
+</html>

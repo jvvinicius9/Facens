@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .bloco {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            background-color: #ccc;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        #btn {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador</h1>
+    <button id="btn">Incrementar</button>
+    <div class="bloco">
+        <p id="contador">
+            0
+        </p>
+    </div>
+</body>
+<script>
+    let botao = document.querySelector('#btn')
+    let contador = document.querySelector('#contador')
+    let valorContado = 0;
+    
+    botao.addEventListener('click', () => {
+        valorContado++;
+        contador.textContent = valorContado
+    })
+</script>
+</html>
