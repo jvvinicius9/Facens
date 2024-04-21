@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 9</title>
+</head>
+<body>
+    <nav>
+        <a href="../Semana3/exercicio1.html">tags html</a>
+        <a href="../Semana5/index.html">css fundamentos</a>
+        <a href="../Semana7/index.html">flexbox</a>
+        <a href="../Semana8/exercicio1.html">DOM</a>
+    </nav>
+    <hr>
+    <div class="conteudo"></div>
+</body>
+<script>
+    let links = document.querySelectorAll('hltml')
+    let pagina = document.querySelector('.conteudo')
+    links.forEach(element => {
+        element.addEventListener('click', (event) =>{
+            event.preventDefault()
+            fetch(element).then(resposta => resposta.text())
+                          .then(dados => pagina.innerHTML = dados)
+        })
+    });
+</script>
+</html>
