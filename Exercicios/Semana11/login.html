@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Tela de Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <style>
+            body {
+                height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+padding-top: 40px;
+padding-bottom: 40px;
+background-image: url(http://marcialocacoescdn.azureedge.net/marcialocacoes/c5598884-2e23-4e3d-833b-bb877492c57f.jpg);
+
+            }
+            form {
+                width: 300px;
+                padding: 25px;
+            }
+        </style>
+
+<body class="container text-center vw-100 vh-100 position-relative">
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <form class="bg-light bg-opacity-75 rounded">
+            <img src="img/bootstrap.png" alt="Logo" id="logo" class="mb-4" width="72" height="72">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="checkbox mb-3 mt-2">
+                <input type="checkbox" name="check" id="check">
+                <label for="check">Remember me</label>
+            </div>
+            <button type="submit" class="w-100 btn btn-primary">Sign in</button>
+            <p class="mt-5 mb-0 text-muted">© 2017–2021</p>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
